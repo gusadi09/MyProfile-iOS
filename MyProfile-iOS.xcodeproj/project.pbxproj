@@ -56,15 +56,55 @@
 		EC701AC424C7F9D90002C86A /* MyProfile-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EC701AC524C7F9D90002C86A /* AppDelegate.swift */,
-				EC701AC724C7F9D90002C86A /* SceneDelegate.swift */,
-				EC701AC924C7F9D90002C86A /* ViewController.swift */,
-				EC701ACB24C7F9D90002C86A /* Main.storyboard */,
+				EC701ADC24C7FC860002C86A /* Base */,
+				EC701ADD24C7FC9C0002C86A /* Util */,
+				EC701AD924C7FC560002C86A /* Model */,
+				EC701ADB24C7FC7F0002C86A /* View */,
+				EC701ADA24C7FC760002C86A /* Controller */,
 				EC701ACE24C7F9DC0002C86A /* Assets.xcassets */,
-				EC701AD024C7F9DC0002C86A /* LaunchScreen.storyboard */,
 				EC701AD324C7F9DC0002C86A /* Info.plist */,
 			);
 			path = "MyProfile-iOS";
+			sourceTree = "<group>";
+		};
+		EC701AD924C7FC560002C86A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC701ADA24C7FC760002C86A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC701AC924C7F9D90002C86A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC701ADB24C7FC7F0002C86A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC701ACB24C7F9D90002C86A /* Main.storyboard */,
+				EC701AD024C7F9DC0002C86A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC701ADC24C7FC860002C86A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC701AC524C7F9D90002C86A /* AppDelegate.swift */,
+				EC701AC724C7F9D90002C86A /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EC701ADD24C7FC9C0002C86A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
