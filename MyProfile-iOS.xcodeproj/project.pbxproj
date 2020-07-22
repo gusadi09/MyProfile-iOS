@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		EC701AC624C7F9D90002C86A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC701AC524C7F9D90002C86A /* AppDelegate.swift */; };
 		EC701AC824C7F9D90002C86A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC701AC724C7F9D90002C86A /* SceneDelegate.swift */; };
-		EC701ACA24C7F9D90002C86A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC701AC924C7F9D90002C86A /* ViewController.swift */; };
+		EC701ACA24C7F9D90002C86A /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC701AC924C7F9D90002C86A /* CreateViewController.swift */; };
 		EC701ACD24C7F9D90002C86A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC701ACB24C7F9D90002C86A /* Main.storyboard */; };
 		EC701ACF24C7F9DC0002C86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC701ACE24C7F9DC0002C86A /* Assets.xcassets */; };
 		EC701AD224C7F9DC0002C86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC701AD024C7F9DC0002C86A /* LaunchScreen.storyboard */; };
+		EC701ADF24C801AC0002C86A /* ProfileMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC701ADE24C801AC0002C86A /* ProfileMode.swift */; };
+		EC701AE124C801BE0002C86A /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC701AE024C801BE0002C86A /* RoundButton.swift */; };
+		EC701AE324C8025C0002C86A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC701AE224C8025C0002C86A /* HomeViewController.swift */; };
+		EC701AE524C802890002C86A /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC701AE424C802890002C86A /* UpdateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC701AC224C7F9D90002C86A /* MyProfile-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyProfile-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC701AC524C7F9D90002C86A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC701AC724C7F9D90002C86A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC701AC924C7F9D90002C86A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC701AC924C7F9D90002C86A /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		EC701ACC24C7F9D90002C86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC701ACE24C7F9DC0002C86A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC701AD124C7F9DC0002C86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC701AD324C7F9DC0002C86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC701ADE24C801AC0002C86A /* ProfileMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMode.swift; sourceTree = "<group>"; };
+		EC701AE024C801BE0002C86A /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		EC701AE224C8025C0002C86A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EC701AE424C802890002C86A /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 		EC701AD924C7FC560002C86A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EC701ADE24C801AC0002C86A /* ProfileMode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -77,7 +86,9 @@
 		EC701ADA24C7FC760002C86A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EC701AC924C7F9D90002C86A /* ViewController.swift */,
+				EC701AC924C7F9D90002C86A /* CreateViewController.swift */,
+				EC701AE224C8025C0002C86A /* HomeViewController.swift */,
+				EC701AE424C802890002C86A /* UpdateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +114,7 @@
 		EC701ADD24C7FC9C0002C86A /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				EC701AE024C801BE0002C86A /* RoundButton.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -178,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC701ACA24C7F9D90002C86A /* ViewController.swift in Sources */,
+				EC701ACA24C7F9D90002C86A /* CreateViewController.swift in Sources */,
+				EC701AE124C801BE0002C86A /* RoundButton.swift in Sources */,
 				EC701AC624C7F9D90002C86A /* AppDelegate.swift in Sources */,
+				EC701AE324C8025C0002C86A /* HomeViewController.swift in Sources */,
+				EC701ADF24C801AC0002C86A /* ProfileMode.swift in Sources */,
+				EC701AE524C802890002C86A /* UpdateViewController.swift in Sources */,
 				EC701AC824C7F9D90002C86A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
