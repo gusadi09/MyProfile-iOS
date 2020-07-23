@@ -10,21 +10,31 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var dicoding: UIImageView!
+    @IBOutlet weak var detailText: UILabel!
+    @IBOutlet weak var emailText: UILabel!
+    @IBOutlet weak var resetButton: RoundButton!
+    @IBOutlet weak var editButton: RoundButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        editButton.pinkColor()
+        resetButton.pinkColor()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        ProfileMode.synchronize()
+        detailText.text = "\(ProfileMode.name) as \(ProfileMode.profession)"
+        emailText.text = ProfileMode.email
     }
-    */
-
+    
+    @IBAction func editPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "moveToUpdate", sender: self)
+    }
+    
+    @IBAction func resetPressed(_ sender: Any) {
+        if ProfileMode.deteleAll(){
+            self.performSegue(withIdentifier: "moveToCreate", sender: self)
+        }
+    }
 }
